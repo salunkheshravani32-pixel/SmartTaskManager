@@ -54,7 +54,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/tasks",
+        "https://smart-task-manager-backend-g1kg.onrender.com/",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -109,7 +109,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://smart-task-manager-backend-g1kg.onrender.com/`,
         {
           title: editTitle,
           description: editDescription,
@@ -170,7 +170,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://smart-task-manager-backend-g1kg.onrender.com/`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
