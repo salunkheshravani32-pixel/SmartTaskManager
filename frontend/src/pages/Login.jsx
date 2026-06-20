@@ -11,7 +11,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://smart-task-manager-backend-g1kg.onrender.com/", {
+      const res = await axios.post("https://smart-task-manager-backend-g1kg.onrender.com/api/auth/login", {
         email,
         password,
       });

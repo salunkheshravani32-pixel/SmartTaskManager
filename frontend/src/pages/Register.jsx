@@ -12,7 +12,7 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      await axios.post("https://smart-task-manager-backend-g1kg.onrender.com/", {
+      await axios.post("https://smart-task-manager-backend-g1kg.onrender.com/api/auth/register", {
         name,
         email,
         password,
